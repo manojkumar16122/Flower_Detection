@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/bg2">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="FLOWER DETECTION"
+        android:id="@+id/title"
+        android:textSize="30dp"
+        android:textAlignment="center"
+        android:textColor="#0C0617"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"/>
+
+
+    <ImageView
+        android:id="@+id/imageview"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_below="@+id/title"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="26dp" />
+
+    <Button
+        android:id="@+id/selectBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageview"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="105dp"
+        android:text=" SELECT IMAGE " />
+
+    <Button
+        android:id="@+id/captureBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/selectBtn"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="99dp"
+        android:text="CAPTURE IMAGE" />
+
+    <Button
+        android:id="@+id/predictBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/captureBtn"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="96dp"
+        android:text=" PREDICT IMAGE " />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/predictBtn"
+        android:layout_alignStart="@+id/predictBtn"
+        android:layout_marginStart="-97dp"
+        android:layout_marginTop="31dp"
+        android:text="Result : "
+        android:textAlignment="center"
+        android:textSize="20dp" />
+
+
+</RelativeLayout>
